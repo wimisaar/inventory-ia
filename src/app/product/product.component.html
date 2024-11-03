@@ -1,0 +1,17 @@
+<!-- src/app/product/product.component.html -->
+<mat-card>
+  <mat-toolbar color="primary">Agregar Producto</mat-toolbar>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>ID del Contenedor</mat-label>
+      <input matInput [(ngModel)]="containerId">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre del Producto</mat-label>
+      <input matInput [(ngModel)]="productName">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="addProduct()">Añadir</button>
+  </div>
+</mat-card>
+
+  

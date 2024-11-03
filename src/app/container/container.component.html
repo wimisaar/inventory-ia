@@ -1,0 +1,11 @@
+<!-- src/app/container/container.component.html -->
+<mat-card>
+  <mat-toolbar color="primary">Agregar Contenedor</mat-toolbar>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre del Contenedor</mat-label>
+      <input matInput [(ngModel)]="containerName">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="addContainer()">Añadir</button>
+  </div>
+</mat-card>
